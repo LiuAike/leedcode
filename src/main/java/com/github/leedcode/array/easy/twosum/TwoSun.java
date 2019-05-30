@@ -1,4 +1,4 @@
-package com.github.leedcode.array.easy.twoSum;
+package com.github.leedcode.array.easy.twosum;
 
 import com.alibaba.fastjson.JSON;
 
