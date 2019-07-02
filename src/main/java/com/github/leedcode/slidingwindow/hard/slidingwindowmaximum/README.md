@@ -1,21 +1,28 @@
 ### Describetion
-Given an array nums and a value val, remove all instances of that value in-place and return the new length.
-Do not allocate extra space for another array, you must do this by modifying the input array in-place with O(1) extra memory.
-The order of elements can be changed. It doesn't matter what you leave beyond the new length.
+Given an array nums, there is a sliding window of size k which is moving from the very left of the array to the very right. 
+You can only see the k numbers in the window. Each time the sliding window moves right by one position. 
+Return the max sliding window.
 
-题目意思是一个int[]数组  去除val值后，返回剩下数组的长度
-要求O(1)的空间复杂度
 
 ### Example:
-Given nums = [3,2,2,3], val = 3,
-Your function should return length = 2, with the first two elements of nums being 2.
-It doesn't matter what you leave beyond the returned length.
+Input: nums = [1,3,-1,-3,5,3,6,7], and k = 3
+Output: [3,3,5,5,6,7] 
+Explanation: 
 
-Given nums = [0,1,2,2,3,0,4,2], val = 2,
-Your function should return length = 5, with the first five elements of nums containing 0, 1, 3, 0, and 4.
-Note that the order of those five elements can be arbitrary.
-It doesn't matter what values are set beyond the returned length.
-
+Window position                Max
+---------------               -----
+[1  3  -1] -3  5  3  6  7       3
+ 1 [3  -1  -3] 5  3  6  7       3
+ 1  3 [-1  -3  5] 3  6  7       5
+ 1  3  -1 [-3  5  3] 6  7       5
+ 1  3  -1  -3 [5  3  6] 7       6
+ 1  3  -1  -3  5 [3  6  7]      7
+ 
+ Note: 
+ You may assume k is always valid, 1 ≤ k ≤ input array's size for non-empty array.
+ 
+ Follow up:
+ Could you solve it in linear time?
 
 ### 地址
-https://leetcode.com/problems/remove-element
+https://leetcode.com/problems/sliding-window-maximum

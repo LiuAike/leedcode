@@ -7,6 +7,8 @@ package com.github.leedcode.array.easy.reverseinteger;
 public class ReverseInteger {
     public static void main(String[] args) {
         System.out.println(reverse(-100));
+        System.out.println(Integer.MIN_VALUE);
+        System.out.println(Integer.MAX_VALUE);
     }
     public static int reverse(int x) {
         int rev = 0;
