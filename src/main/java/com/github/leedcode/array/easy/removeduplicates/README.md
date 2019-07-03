@@ -40,4 +40,4 @@ for (int i = 0; i < len; i++) {
 }
 ```
 ### 地址
-https://leetcode.com/problems/height-checker
+https://leetcode.com/problems/remove-duplicates-from-sorted-array
