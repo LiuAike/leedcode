@@ -11,9 +11,8 @@ public class PalindRome {
     }
 
     public static boolean isPalindrome(int x) {
-        String b = String.valueOf(x);
-        StringBuilder before = new StringBuilder(b);
+        StringBuilder before = new StringBuilder(String.valueOf(x));
         String after = before.reverse().toString();
-        return b.equals(after);
+        return String.valueOf(x).equals(after);
     }
 }
