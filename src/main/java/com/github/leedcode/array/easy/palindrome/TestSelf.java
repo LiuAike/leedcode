@@ -1,8 +1,5 @@
 package com.github.leedcode.array.easy.palindrome;
 
-import java.util.ArrayList;
-import java.util.List;
-
 /**
  * @author yifeng.liu
  * @date 2019-07-03 17:03
