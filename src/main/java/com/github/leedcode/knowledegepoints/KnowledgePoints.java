@@ -6,6 +6,7 @@ import java.util.*;
 
 /**
  * 知识积累
+ *
  * @author yifeng.liu
  * @date 2019-07-02 15:14
  */
@@ -13,11 +14,11 @@ public class KnowledgePoints {
     public static void main(String[] args) {
 
         //1、对数组进行排序，string和int都可以
-        int[] tint = new int[]{-1,-2,8,4};
+        int[] tint = new int[]{-1, -2, 8, 4};
         Arrays.sort(tint);
         System.out.println(JSON.toJSONString(tint));//[-2,-1,4,8]
 
-        String[] str = new String[]{"b","a","c"};
+        String[] str = new String[]{"b", "a", "c"};
         Arrays.sort(str);
         System.out.println(JSON.toJSONString(str));//["a","b","c"]
 
@@ -39,10 +40,10 @@ public class KnowledgePoints {
         System.out.println(sb.toString());//ac
 
         //使用Collections获取一个集合中的最大值或者最小值
-        Map<Integer,Integer> count = new HashMap<Integer, Integer>();
-        count.put(1,1);
-        count.put(2,2);
-        count.put(3,3);
+        Map<Integer, Integer> count = new HashMap<Integer, Integer>();
+        count.put(1, 1);
+        count.put(2, 2);
+        count.put(3, 3);
         System.out.println(Collections.max(count.values()));//3
         System.out.println(Collections.max(count.keySet()));//3huo
         List<Integer> arr = new ArrayList<Integer>();
@@ -52,10 +53,12 @@ public class KnowledgePoints {
         System.out.println(Collections.min(arr));//1
 
         //注意map.getOrDefault的使用
-        Map<Integer,Integer> map = new HashMap<Integer, Integer>();
+        Map<Integer, Integer> map = new HashMap<Integer, Integer>();
         for (int i = 0; i < 10; i++) {
-            map.put(i,map.getOrDefault(i,0)+1);
+            map.put(i, map.getOrDefault(i, 0) + 1);
         }
         System.out.println(JSON.toJSONString(map));//{0:1,1:1,2:1,3:1,4:1,5:1,6:1,7:1,8:1,9:1}
+
+
     }
 }
