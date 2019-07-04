@@ -9,6 +9,7 @@ import java.util.Stack;
 public class RemoveAllAdjacentDuplicatesInString {
     public static void main(String[] args) {
         String c = "abbaca";
+        //执行效率没有TestSelf效率高
         System.out.println(removeDuplicates(c));
 
     }
@@ -24,6 +25,10 @@ public class RemoveAllAdjacentDuplicatesInString {
          *      1、栈中要是没有元素调用stack.peek()方法，会报java.util.EmptyStackException异常
          *      2、peek()：返回栈顶的值但是不改变栈的值，查看栈顶的对象而不移除它。
          *      3、pop()：返回栈顶的值，同时会把栈顶的值删除。
+         *
+         *  时间和占用空间：
+         *      Runtime: 39 ms, faster than 55.83% of Java online submissions for Remove All Adjacent Duplicates In String.
+         *      Memory Usage: 38.3 MB, less than 100.00% of Java online submissions for Remove All Adjacent Duplicates In String.
          */
         char[] s = S.toCharArray();
         int len = s.length;

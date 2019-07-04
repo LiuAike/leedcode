@@ -33,5 +33,12 @@ public class KnowledgePoints {
         ins.add(7);
         Collections.reverse(ins);
         System.out.println(JSON.toJSONString(ins));//[7,3,4,1]
+
+        //sb.deleteCharAt(1);根据坐标删除对应的元素，返回删除后生于元素组成的字符串
+        //可以用于相邻重复元素删除
+        StringBuilder sb = new StringBuilder();
+        sb.append("a").append("b").append("c");
+        sb.deleteCharAt(1);
+        System.out.println(sb.toString());//ac
     }
 }
